@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #FD8451, #FFBD6F);
+}
+.container {
+    background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+    width: 500px;
+    height: 225px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.63);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.63);
+}
+h2 {
+    margin: 20px;
+    text-align: left;
+    font-family: cursive;
+}
+#text-area {
+    border: 3px solid #ccc;
+    
+}
+#total, #remainning {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: red;
+    font-family: cursive;
+}
+#remainning {
+    float: right;
+    margin-right: 20px;
+    
+}
+#zero {
+    color:blue;
+
+}
+#fithty {
+    color: blueviolet;
+}
+/* Responsive */
+/* Inphone 6,7,8 */
+@media screen and (max-width: 736px) {
+    .container  {
+        width: 300px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #text-area {
+        width: 250px;
+        height: 90px;
+        margin-right: 10px;
+    }
+    #total,#remainning {
+        font-size: 14px;
+    }
+}
